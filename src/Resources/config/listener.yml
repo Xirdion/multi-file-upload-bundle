@@ -1,0 +1,12 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Xirdion\MultiFileUploadBundle\EventListener\GetContentElementListener:
+    tags:
+      - { name: kernel.event_listener, event: contao.get_content_element, method: onGetContentElement, priority: -255 }
+
+  Xirdion\MultiFileUploadBundle\EventListener\PrepareFormDataListener:
+    tags:
+      - { name: kernel.event_listener, event: contao.prepare_form_data, method: onPrepareFormData, priority: -255 }

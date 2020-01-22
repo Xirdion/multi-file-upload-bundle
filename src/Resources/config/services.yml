@@ -1,0 +1,7 @@
+services:
+  Xirdion\MultiFileUploadBundle\Controller\MultiFileUploadController:
+    public: true
+    arguments:
+      - '@contao.framework'
+      - '@session'
+      - '%kernel.project_dir%'

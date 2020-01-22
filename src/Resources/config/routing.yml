@@ -1,0 +1,3 @@
+xirdion_multi_file_upload:
+  resource: ../../../Controller
+  type: annotation
