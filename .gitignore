@@ -1,0 +1,9 @@
+# phpstorm
+.idea/
+
+# os files
+.DS_Store
+
+# composer
+/vendor/
+composer.lock
