@@ -43,11 +43,11 @@ class GetContentElementListener implements ServiceAnnotationInterface
                         $jsCombiner = new Combiner();
 
                         // add dropzonejs
-                        $jsCombiner->add('bundles/xirdionmultifileupload/dropzone.js');
-                        $jsCombiner->add('bundles/xirdionmultifileupload/dropzone.config.js');
+                        $jsCombiner->add('bundles/multifileupload/dropzone.js');
+                        $jsCombiner->add('bundles/multifileupload/dropzone.config.js');
                         $GLOBALS['TL_BODY']['dropzonejs'] = sprintf('<script src="%s"></script>', $jsCombiner->getCombinedFile());
 
-                        $GLOBALS['TL_CSS']['dropzonejs'] = 'bundles/xirdionmultifileupload/dropzone.css';
+                        $GLOBALS['TL_CSS']['dropzonejs'] = 'bundles/multifileupload/dropzone.css';
                         break;
                     }
                 }
