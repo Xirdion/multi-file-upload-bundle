@@ -26,8 +26,7 @@ class Plugin implements BundlePluginInterface
     public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(MultiFileUploadBundle::class)
-                ->setLoadAfter([ContaoCoreBundle::class]),
+            BundleConfig::create(MultiFileUploadBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
         ];
     }
 }

@@ -13,7 +13,12 @@ declare(strict_types=1);
 namespace Xirdion\MultiFileUploadBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Xirdion\MultiFileUploadBundle\DependencyInjection\MultiFileUploadExtension;
 
 class MultiFileUploadBundle extends Bundle
 {
+    public function getContainerExtension()
+    {
+        return new MultiFileUploadExtension();
+    }
 }
