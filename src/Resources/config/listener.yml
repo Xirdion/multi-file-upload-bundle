@@ -1,4 +1,8 @@
 services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
   Xirdion\MultiFileUploadBundle\EventListener\GetContentElementListener:
     class: Xirdion\MultiFileUploadBundle\EventListener\GetContentElementListener
     public: true
