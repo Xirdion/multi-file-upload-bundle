@@ -49,7 +49,7 @@ class MultiFileUploadController extends AbstractController
     }
 
     /**
-     * @Route("/xirdion/multifileupload/dropzone/upload", name="xirdion_multifileupload_dropzone_upload")
+     * @Route("/xirdion/multifileupload/upload", name="xirdion_multi_file_upload")
      *
      * @param Request $request
      *

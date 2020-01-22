@@ -29,7 +29,7 @@ var initDropzone = function () {
 
     function initDropzoneConfig(field) {
         var newDropZone = new Dropzone(field, {
-            url: "dreibein/dropzone/upload",
+            url: "/xirdion/multifileupload/upload",
             paramName: field.dataset.name,
             maxFilesize: field.dataset.maxFileSize,
             maxFiles: field.dataset.maxFiles,
